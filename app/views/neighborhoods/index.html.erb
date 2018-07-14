@@ -1,0 +1,13 @@
+<div class="container"> 
+  <h3>Search</h3>
+        
+  <form action = "/neighborhoods" method = "get">
+    <input type = "text" name ="area" placeholder = "Shibuya" >
+    <input type = "submit">
+  </form>
+  <% @neighborhoods.each do |id, neighborhood| %>
+    <%= link_to neighborhood[:name], neighborhood_path(id) class: 'no-deco' do %>
+    <% end %>
+  <% end %>
+
+</div>

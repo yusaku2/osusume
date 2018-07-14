@@ -1,2 +1,12 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container"> 
+  <h1>Welcome to Osusume! </h1>
+  <h2>Add A Neighborhood</h2>
+
+  <%= link_to "index", index_path %>
+  <%= simple_form_for @neighborhood do |f| %>
+  <%= f.label :neighborhood %>
+  <%= f.input_field :name %>
+  <%= f.hint 'No special characters please!' %>
+  <%= f.button :submit %>
+  <% end %>
+</div>

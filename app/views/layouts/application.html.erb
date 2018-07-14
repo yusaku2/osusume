@@ -11,6 +11,8 @@
   </head>
   <body>
     <%= yield %>
+    <%= link_to "About", about_path %>
+    <%= link_to "Contact", contact_path %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>
